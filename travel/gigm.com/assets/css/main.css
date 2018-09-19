@@ -1,0 +1,559 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300);
+.gigm-banner {
+  background-image: url(../../img/roadtrip.jpg);
+  background-repeat: repeat-y;
+  height: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 515px;
+  position: relative;
+  margin-bottom: 0;
+  background-attachment: fixed;
+ 
+  background-size: cover;
+      background-repeat: no-repeat;
+}
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .gigm-banner {
+      background-attachment: inherit;
+      min-height: 425px;
+      background-position-y: -50px;
+      padding-top: 0;
+
+    } }
+  @media only screen and (min-width: 240px) and (max-width: 480px) {
+    .gigm-banner {
+      background-attachment: inherit;
+      min-height: 530px;
+      background-position-y: -50px;
+      padding-top: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .promo-ads marquee {
+    display: none; } }
+.promo-ads marquee p {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  color: #2d4964;
+  font-weight: 600; }
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+  .promo-banner {
+    display: none; } }
+.promo-banner img {
+  float: right; }
+
+.promo-texts {
+  font-family: "Raleway", sans-serif; }
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .promo-texts {
+      display: none; } }
+  .promo-texts h1 {
+    float: right;
+    color: #d41f26;
+    margin-bottom: 20px;
+    font-style: italic;
+    margin-top: 0;
+    font-weight: 600; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .promo-texts h1 {
+        font-size: 42px;
+        margin-bottom: 10px; } }
+    .promo-texts h1 small {
+      color: #d41f26;
+      font-style: italic; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .promo-texts h1 small {
+          font-size: 31px; } }
+
+.gigm-tabs-search {
+  position: absolute;
+  float: left;
+  width: 100%;
+  z-index: 99;
+  bottom: 50px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .gigm-tabs-search {
+      bottom: 0;
+          padding-bottom: 2%;
+    } }
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .gigm-tabs-search {
+      position: relative;
+      bottom: 0;
+      top: 36px; } }
+  .gigm-tabs-search .nav-tabs {
+    border-bottom: none; }
+    .gigm-tabs-search .nav-tabs li {
+      border-radius: 0;
+      background-color: #e84e57;
+      margin-bottom: 0; }
+      .gigm-tabs-search .nav-tabs li:first-child {
+        border-top-left-radius: 5px; }
+      .gigm-tabs-search .nav-tabs li a {
+        padding: 15px 10px;
+        border-radius: 0;
+        font-size: 18px;
+        color: #fff;
+        text-indent: 1px;
+        letter-spacing: 1px;
+        margin: 0;
+        border: none;
+        font-family: "Raleway", sans-serif; }
+        @media only screen and (min-width: 240px) and (max-width: 1024px) {
+          .gigm-tabs-search .nav-tabs li a {
+            font-size: 14px;
+            padding: 8px 5px; } }
+      .gigm-tabs-search .nav-tabs li.active {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-bottom: 0; }
+        .gigm-tabs-search .nav-tabs li.active a {
+          background-color: transparent;
+          color: #d41f26;
+          border: none; }
+      .gigm-tabs-search .nav-tabs li:hover {
+        background-color: rgba(255, 255, 255, 0.5); }
+        .gigm-tabs-search .nav-tabs li:hover a {
+          background-color: rgba(255, 255, 255, 0.5);
+          color: #d41f26; }
+  .gigm-tabs-search .tab-content-wrap {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 0;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.41);
+    padding: 15px 25px;
+    border-radius: 5px;
+    border-top-left-radius: 0; }
+    @media only screen and (min-width: 480px) and (max-width: 1024px) {
+      .gigm-tabs-search .tab-content-wrap {
+        padding: 10px 10px; } }
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .gigm-tabs-search .tab-content .tab-pane .small-inputs {
+      width: 30%;
+      float: left; } }
+  .gigm-tabs-search .tab-content label {
+    text-transform: capitalize;
+    color: #272727;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 1px; }
+    @media only screen and (min-width: 480px) and (max-width: 1024px) {
+      .gigm-tabs-search .tab-content label {
+        font-size: 14px; } }
+    @media only screen and (min-width: 240px) and (max-width: 480px) {
+      .gigm-tabs-search .tab-content label {
+        font-size: 12px;
+        letter-spacing: 0.5px; } }
+  .gigm-tabs-search .tab-content .select-menu {
+    position: relative; }
+.gigm-tabs-search .tab-content .select-menu::after
+{height: 40px;
+ -webkit-appearance:none;
+ border:1px solid #272727;
+}
+.gigm_searchopt2{
+	padding:5px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    border: none;
+    margin: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 0;
+}
+    
+    .select2-container{
+        border: 1px solid #272727;
+    border-radius: 3px;
+    }
+    
+
+  /*.gigm-tabs-search .tab-content .select-menu::after {
+    content: "\f078";
+    font-family: 'FontAwesome';
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    width: 36px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+    background-position: center;
+    background-color: #e84e57;
+    padding-left: 10px;
+    padding-top: 5px; }*/
+  /*.gigm-tabs-search .tab-content select, .gigm-tabs-search .tab-content input {
+    width: 100%;
+    border-radius: 0px !important;
+    border: 1px solid #fff;
+    height: 36px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    cursor: pointer; }*/
+  .gigm-tabs-search .tab-content .btn-gigm {
+    margin-top: 35px;
+    background-color: #e84e57;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 0; }
+    @media only screen and (min-width: 240px) and (max-width: 768px) {
+      .gigm-tabs-search .tab-content button {
+        width: 100%; } }
+    @media only screen and (min-width: 240px) and (max-width: 480px) {
+      .gigm-tabs-search .tab-content button {
+        font-size: 14px; } }
+
+.gigm-1 {
+  margin-bottom: 40px; }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .gigm-1 {
+      margin-bottom: 20px; } }
+  .gigm-1 .gigm-info-inner {
+    border-top: 3px solid #d41f26;
+    background-color: #D8D8D8; }
+    .gigm-1 .gigm-info-inner .gigm-booking-list {
+      margin: 0; }
+      .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes {
+        padding: 20px 0;
+        border-right: 1px solid #979797; }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes {
+            width: 33.33333333%;
+            float: left; } }
+        @media only screen and (min-width: 240px) and (max-width: 768px) {
+          .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes {
+            border-right: none;
+            border-bottom: 1px solid #979797; } }
+        .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes:last-child {
+          border-right: none; }
+          @media only screen and (min-width: 240px) and (max-width: 768px) {
+            .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes:last-child {
+              border-bottom: none; } }
+        .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes:hover {
+          background: #f6f6f6; }
+        .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes:hover a {
+          color: #ed8323;
+          text-decoration: none; }
+        .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes .status-tags {
+          font-weight: bold;
+          color: #d41f26;
+          letter-spacing: 2px; }
+          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes .status-tags {
+              font-size: 12px;
+              letter-spacing: 1px;
+              font-weight: normal; } }
+          @media only screen and (min-width: 240px) and (max-width: 768px) {
+            .gigm-1 .gigm-info-inner .gigm-booking-list .info-boxes .status-tags {
+              font-size: 12px;
+              letter-spacing: 2px;
+              font-weight: normal; } }
+
+.gigm-deals {
+  margin-bottom: 40px; }
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .gigm-deals {
+      margin-bottom: 20px; } }
+  .gigm-deals .gigm-deals-header h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    color: #272727; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .gigm-deals .gigm-deals-header h3 {
+        font-size: 18px; } }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .gigm-deals .gigm-deals-header h3 {
+        font-size: 18px; } }
+  .gigm-deals .deals-inner {
+    border-top: 2px solid #9B9B9B;
+    border-bottom: 2px solid #9B9B9B;
+    padding: 15px; }
+  .gigm-deals .gigm-deals-list {
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif; }
+    .gigm-deals .gigm-deals-list span {
+      color: #d41f26;
+      font-size: 20px;
+      letter-spacing: 1px; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .gigm-deals .gigm-deals-list span {
+          font-size: 16px; } }
+    .gigm-deals .gigm-deals-list p {
+      color: #9B9B9B;
+      font-size: 14px;
+      letter-spacing: 2px; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .gigm-deals .gigm-deals-list p {
+          font-size: 10px; } }
+    .gigm-deals .gigm-deals-list .dealList {
+      box-sizing: border-box;
+      border-right: 1px dashed #9B9B9B; }
+      @media only screen and (min-width: 240px) and (max-width: 768px) {
+        .gigm-deals .gigm-deals-list .dealList {
+          border-right: none;
+          border-bottom: 1px dashed #9B9B9B;
+          padding-top: 10px; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .gigm-deals .gigm-deals-list .dealList {
+          width: 33.33333333%;
+          float: left; } }
+      .gigm-deals .gigm-deals-list .dealList:last-child {
+        border-right: none; }
+        @media only screen and (min-width: 240px) and (max-width: 768px) {
+          .gigm-deals .gigm-deals-list .dealList:last-child {
+            border-bottom: none; } }
+    .gigm-deals .gigm-deals-list .deal-img {
+      margin-bottom: 40px;
+      float: left;
+      margin-right: 10px; }
+      @media only screen and (min-width: 240px) and (max-width: 768px) {
+        .gigm-deals .gigm-deals-list .deal-img {
+          margin-bottom: 20px; } }
+    .gigm-deals .gigm-deals-list .no-fees {
+      background-image: url(../images/gigm-deals.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px; }
+    .gigm-deals .gigm-deals-list .lowest-price {
+      background-image: url(../images/gigm-deals.png);
+      background-repeat: no-repeat;
+      background-position: -87px 0px;
+      width: 64px;
+      height: 60px; }
+    .gigm-deals .gigm-deals-list .customer-care {
+      background-image: url(../images/gigm-deals.png);
+      background-repeat: no-repeat;
+      background-position: -178px 0px;
+      width: 60px;
+      height: 60px; }
+
+.explore-destination {
+  background-color: #EDEFED;
+  padding: 10px 0 40px 0; }
+  .explore-destination .section-header {
+    font-family: "Raleway", sans-serif; }
+    .explore-destination .section-header h3 {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: "Raleway", sans-serif;
+      text-transform: capitalize;
+      color: #d41f26; }
+    .explore-destination .section-header p {
+      color: #666666;
+      font-size: 14px;
+      letter-spacing: 2px; }
+  .explore-destination .featured-city {
+    margin-top: 30px; }
+   
+    @media only screen and (min-width: 240px) and (max-width: 768px) {
+      .explore-destination .featured-city .city-col {
+        margin-bottom: 20px; } }
+    .explore-destination .featured-city .gigm-tour-cards {
+      background-color: #f5f5f5;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: block;
+      max-width: 100%;
+      height: 300px; }
+
+@media only screen and (max-width: 768px) and (min-width: 240px) {
+    .explore-destination .featured-city .city-col {
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .explore-destination .featured-city .col-md-3 {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 240px) {
+    .explore-destination .featured-city .gigm-tour-cards {
+        height: 180px;
+    }
+    /*.jumbotron{background-size:contain;}*/
+    /*.gigm-banner{min-height:450px;}*/
+}
+   
+      .explore-destination .featured-city .gigm-tour-cards h2 {
+        font-size: 32px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        font-family: "Dosis", sans-serif;
+        text-rendering: optimizeLegibility;
+        vertical-align: middle;
+        display: block;
+        line-height: 100%;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); }
+   .explore-destination .featured-city .gigm-lagos-trip {
+    background-image: url(../images/lagos-img.jpg);
+}
+    .explore-destination .featured-city .gigm-ph-trip {
+      background-image: url(../images/ph-img.jpg); }
+    .explore-destination .featured-city .gigm-benin-trip {
+      background-image: url(../images/benin-img.jpg); }
+
+.gigm-bus-route {
+  padding: 10px 0 30px 0; }
+  @media only screen and (min-width: 240px) and (max-width: 768px) {
+    .gigm-bus-route {
+      text-align: center; } }
+  .gigm-bus-route .bus-route-header {
+    margin-bottom: 10px; }
+    .gigm-bus-route .bus-route-header h3 {
+      color: #666666;
+      font-weight: normal;
+      font-family: "Raleway", sans-serif;
+      font-size: 30px;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .gigm-bus-route .bus-route-header h3 {
+          font-size: 26px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .gigm-bus-route .city-routes .routes-col {
+      width: 33.33333333%;
+      float: left; } }
+  .gigm-bus-route .city-routes ul {
+    list-style: none;
+    padding-left: 0; }
+    .gigm-bus-route .city-routes ul li {
+      padding-bottom: 5px;
+      color: #666666;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: light; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .gigm-bus-route .city-routes ul li {
+          font-size: 12px;
+          letter-spacing: 0.5px; } }
+
+        .explore-destination .featured-city .tour-data:before, .explore-destination .featured-city .tour-footer:after {
+      content: "";
+      display: table; }
+    .explore-destination .featured-city .tour-data {
+      float: left;
+      width: 100%;
+      /*border: 1px solid #999;*/
+      background-color: #fff;
+      padding: 14px 10px 5px; }
+      .explore-destination .featured-city .tour-data h5 {
+        font-weight: bold;
+        font-size: 18px;
+        float: left;
+        margin-right: 5px; }
+        .explore-destination .featured-city .tour-data h5 a {
+          color: #2c3e50; }
+      .explore-destination .featured-city .tour-data .gigm-btn {
+        float: right;
+        background-color: #e84e57;
+        color: #fff;
+        padding: 6px 8px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        border-radius: 0;
+        display: inline-block; }
+      .explore-destination .carousel-arrows {
+    top: -56px;
+    position: absolute;
+    right: 0;
+}
+      .explore-destination .featured-city .gigm-abuja-trip {
+    background-image: url(../images/abuja-img.jpg);
+}
+        .explore-destination .carousel-arrows a {
+      background: #d41f26;
+      color: #fff;
+      float: left;
+      font-size: 27px;
+      height: 40px;
+      line-height: 37px;
+      text-align: center;
+      width: 40px; }
+
+         .explore-destination .section-header {
+    font-family: "Raleway", sans-serif;
+    border-bottom: 2px solid #e84e57;
+    width: 100%; }
+    @media only screen and (min-width: 240px) and (max-width: 768px) {
+      .explore-destination .section-header {
+        width: 70%;
+        border-bottom: none; } }
+
+    @media only screen and (max-width: 1024px) and (min-width: 240px){
+.explore-destination .featured-city .gigm-tour-cards {
+    height: 180px;
+}
+    }
+
+    .explore-destination .section-header h3 {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: "Raleway", sans-serif;
+      text-transform: capitalize;
+      color: #d41f26; }
+    .explore-destination .section-header p {
+      color: #666666;
+      font-size: 14px;
+      letter-spacing: 2px; }
+     .explore-destination .featured-city {
+    margin-top: 30px;
+    font-family: "Raleway", sans-serif; }
+     .explore-destination .featured-city .city-col.hvr-grow-shadow {
+    display: block;
+}
+     .explore-destination .featured-city .gigm-kaduna-trip {
+    background-image: url(../images/kaduna-img.jpg);
+}
+     .explore-destination .featured-city .gigm-anambra-trip {
+    background-image: url(../images/anambra-img.jpg);
+}
+     .explore-destination .featured-city .gigm-enugu-trip {
+    background-image: url(../images/enugu-img.jpg);
+}
+     .explore-destination .featured-city .gigm-warri-trip {
+    background-image: url(../images/warri-img.jpg);
+}
+
+ .promo-texts.wow.bounceInRight {
+    position: relative;
+}
+
+.promo-texts p {
+    float: right;
+}
+
+.promo-texts p a {
+    margin-left:20px;
+}
+
+
+@media screen and (max-width: 1025px) {
+	.booking-section .search-inputs label {
+		color: #ffffff;
+		font-weight: normal;
+		letter-spacing: 1px;
+		font-size: .7985714163em;
+	}
+}

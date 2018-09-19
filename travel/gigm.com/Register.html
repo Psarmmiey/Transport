@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from gigm.com/Register.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Sep 2018 15:33:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link href="webassets/css/main.css" rel="stylesheet" /><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" /><meta name="author" /><title>
+	GIGM.com | Nigeria's leading transport company
+</title><link rel="shortcut icon" /><link rel="stylesheet" href="assets/css/bootstrap.min.css" /><link rel="stylesheet" href="assets/css/main.css" /><meta name="google-signin-client_id" content="673029782469-m6ocah06ie7g35j7cc6qh4sblsklh82a.apps.googleusercontent.com" />
+    <script src="../connect.facebook.net/en_US/all.js"></script>
+    <script>
+        function checkLoginState() {
+            FB.login(function (response) {
+                if (response.authResponse) {
+                    FB.api('/me', { locale: 'en_US', fields: 'name, email' }, function (response) {
+                        $('#txtfname').val(response.name);
+                        $('#txtEmail').val(response.email);
+                    });
+                } else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            });
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '348186115558525',
+                cookie: true,  // enable cookies to allow the server to access 
+                // the session
+                xfbml: true,  // parse social plugins on this page
+                version: 'v2.8' // use graph api version 2.8
+            });
+        }
+
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <script src="../apis.google.com/js/platform.js" async defer></script>
+    <style>
+        #my-signin2 >div
+        {
+            width:100% !important;
+        }
+        .btn-fb {
+            width: 100%;
+            height: 50px;
+            border-radius: 0px;
+            line-height:38px;
+        }
+        .btn-fb:hover
+        {
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            $('#txtfname').val(googleUser.getBasicProfile().getName());
+            $('#txtEmail').val(googleUser.getBasicProfile().getEmail());
+
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 240,
+                'height': 50,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    </script>
+    <div class="register-view">
+        <div class="text-center logo-wrapper">
+            <a href="Default.html" title="GIGM.com">
+                <img src="webassets/img/gigm-logo.png">
+            </a>
+        </div>
+        <div class="content-body">
+            <div class="container">
+                <div class="text-center wrapper-lg signup-wrapper">
+                    <div class="login-wrap">
+                        <form method="post" action="https://gigm.com/Register.aspx" id="ctl01" class="login-form login-section">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Sde8wtMBPe33FxaniW0Lp0lJkMplPorgsCPTobslY4tErn0LVuOGo3TBx5KgjbdeZC5sm8f/C2S/EhoTsJXdWTlFNtkU52sLUpD8Od5wktQ=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="799CC77D" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="I6Aybp6gS56z3zC43BK/NZazm5g/0TJou+nb7iPmegaZqMmsN0PUrvlkM61kUDEIseuzDiflC9fnIlqSM2nZZNbRDHpW3b4+2Oc+dzmGejBoFeudlk6p4F1bA4HAePPVUziPnuZ1S0R1BSx0QpNp1NfV4YucPmpU+xQsTmF4Sn+HObjcNKFJT3jkdxYHL/NCzLVvGACrcB0iKGGtc8P72/Tvd/KuggQMUCuQMTkSqBS7dj11IUsw8kWX0usBnt/n9QLsSPak7+c5+f42LEyuEw==" />
+</div>
+                            <div class="row row-btn">
+                                <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                    <div id="my-signin2"></div>
+                                </div>
+                                <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                    <a class="btn btn-large btn-fb col-xs-12," role="button" onclick="checkLoginState()"><i class="fa fa-facebook"></i>Sign up with Facebook</a>
+                                </div>
+                                <p class="create-login">Or create a new GIGM.com Account</p>
+                                <p class=" col-xs-12 text-center">
+                                    <span id="lblmsg"></span>
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-12 col-md-12">
+                                    <input name="txtfname" type="text" id="txtfname" class="form-control " required="true" placeholder="Full Name" />
+                                    
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="row row-2">
+                                <div class="form-group col-lg-4 col-md-4">
+
+
+                                    <select name="drpSex" id="drpSex" class="form-control">
+	<option value="0">Male</option>
+	<option value="1">Female</option>
+
+</select>
+
+                                </div>
+
+
+
+
+
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <input name="txtPhone" id="txtPhone" class="form-control" type="tel" required="true" placeholder="Mobile" onkeypress="return isNumber(event)" />
+                                </div>
+
+                                <div class="form-groupcol-lg-4 col-md-4">
+
+                                    <input name="txtEmail" type="email" id="txtEmail" class="form-control " required="true" placeholder="Email" />
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+
+                                    <input name="txtPassword" type="password" id="txtPassword" class="form-control " required="true" placeholder="Password" />
+
+                                    
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control " required="true" placeholder="Confirm Password" />
+
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <p class="create-login">By Signing Up I Agree to the <a href="Terms-and-Conditions.html" target="_blank" class="gigm-red">Terms &amp; Conditions</a></p>
+                                <input type="submit" name="btnReg" value="Sign up" id="btnReg" class="btn btn-large btn-register col-xs-12" />
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="webassets/js/bootstrap.min.js"></script>
+    <script src="webassets/js/main.js"></script>
+    <script src="webassets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../apis.google.com/js/platformd1c1.js?onload=renderButton" async defer></script>
+</body>
+
+<!-- Mirrored from gigm.com/Register.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Sep 2018 15:33:52 GMT -->
+</html>
