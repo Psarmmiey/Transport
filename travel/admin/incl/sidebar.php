@@ -11,44 +11,48 @@
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="active">
-                <a href="index.html">
+            <li <?php if($page_title == "Dashboard") echo 'class = "active"';?>>
+                <a href="../index.php">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li>
+            <li <?php if($page_title == "Vehicles")
+                echo 'class = "active"';
+            ?>>
                 <a href="../tables/vehicles.php">
                     <i class="material-icons">car</i>
                     <p>Vehicles</p>
                 </a>
             </li>
-            <li><a href="../tables/customers.php">
+            <li <?php if($page_title == "Customers") echo 'class = "active"';?>>
+                <a href="../tables/customers.php">
                     <i class="material-icons">people</i>
                         <p>Customers</p>
                 </a>
             </li>
-            <li><a href="../tables/drivers.php">
+            <li <?php if($page_title == "Drivers") echo 'class = "active"';?>>
+                <a href="../tables/drivers.php">
                     <i class="material-icons">people</i>
                         <p>Drivers</p>
                 </a>
             </li>
-            <li><a href="../tables/routes.php">
+            <li <?php if($page_title == "Routes") echo 'class = "active"';?>><a href="../tables/routes.php">
                     <i class="material-icons">road</i>
                         <p>Routes</p>
                 </a>
             </li>
-            <li><a href="../tables/payables.php">
+            <li <?php if($page_title == "Payments") echo 'class = "active"';?>><a href="../tables/payables.php">
                     <i class="material-icons">money</i>
                     <p>Payments</p>
                 </a>
             </li>
-            <li><a href="../tables/reservations.php">
+            <li <?php if($page_title == "Reservations") echo 'class = "active"';?>><a href="../tables/reservations.php">
                     <i class="material-icons">money</i>
                         <p>Reservations</p>
                 </a>
             </li>
-            <li><a href="../tables/users.php">
+            <li <?php if($page_title == "Users") echo 'class = "active"';?>><a href="../tables/users.php">
                     <i class="material-icons">money</i>
                         <p>Users</p>
                 </a>

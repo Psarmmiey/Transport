@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="http://www.urbanui.com/" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Turbo - Bootstrap Material Admin Dashboard Template</title>
+    <title><?php echo $page_title; ?></title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
