@@ -1557,7 +1557,7 @@ i.fa.fa-smile {
 
 .book-appointment {
     box-sizing: border-box;
-    background: #252525;
+    background: #000000b6;
 }
 
 .bg-agile img {
@@ -1606,12 +1606,13 @@ i.fa.fa-smile {
 
 .book-agileinfo-form input[type="text"],
 .book-agileinfo-form input[type="email"],
+.book-agileinfo-form input[type="date"],
 select#passengers,
 select#cab,
 select#direction,
 input#datepicker {
     width: 100%;
-    color: #a0a0a0;
+    color: #ffffff;
     font-size: 15px;
     letter-spacing: 1.5px;
     border-radius: 0.25rem;
